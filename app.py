@@ -7,8 +7,12 @@ from scanner import scan_target_ip
 
 app = Flask(__name__)
 
-# Configure SQLite Database
-db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'iot_risk.db')
+# Configure SQLite Database (Use /tmp on Vercel serverless environment)
+if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
+    db_path = '/tmp/iot_risk.db'
+else:
+    db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'iot_risk.db')
+
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
