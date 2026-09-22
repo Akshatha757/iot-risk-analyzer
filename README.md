@@ -179,46 +179,7 @@ Open your browser and navigate to:
 
 ---
 
-## 🎙️ How to Explain This Project in Interviews (Fresher Script)
-
-When an interviewer asks: **"Tell me about a project you have built"**, use this pitch:
-
-> *"I developed **IoT Shield**, a full-stack cybersecurity diagnostic platform designed to audit IoT device configurations and assess network vulnerability vectors."*
->
-> *"For the **backend**, I used **Python and Flask** integrated with an **SQLite database via Flask-SQLAlchemy ORM**. I created an automated risk scoring engine (`risk_engine.py`) that evaluates parameters like default credentials, network isolation, and exposed ports to calculate a risk index score from 0 to 100."*
->
-> *"For the **frontend**, I built a Single-Page Application using **HTML5, Vanilla CSS with Glassmorphism styling, and JavaScript**. I integrated **Chart.js** to display interactive telemetry charts and risk distribution breakdowns."*
->
-> *"This project strengthened my skills in REST API architecture, database ORM modeling, modular Python programming, and frontend data visualization."*
-
----
-
-## 📄 Ready-to-Use Resume Project Entry
-
-You can copy and paste this directly into the **Projects** section of your resume:
-
-```text
-IoT Shield – Cyber Risk Auditing & Diagnostic Platform
-Tech Stack: Python, Flask, SQLAlchemy, SQLite, JavaScript (ES6+), CSS3 (Glassmorphism), Chart.js, REST APIs
-
-• Architected a full-stack web application to assess IoT device vulnerability vectors and compute dynamic security index scores (0–100).
-• Developed a Python scoring engine (risk_engine.py) analyzing network exposure parameters, open port signatures (RTSP, UPnP, HTTP), and credential strength.
-• Implemented RESTful APIs and SQLite database models using Flask-SQLAlchemy to record scan histories and seed a Threat Intelligence Library.
-• Designed an interactive Single-Page Application (SPA) dashboard featuring real-time risk distribution graphics powered by Chart.js.
-```
-
----
-
-## 💡 High-Value Enhancements Roadmap (Next Steps)
-
-1. **🧪 Automated Unit Testing (`pytest`)**: Add automated unit tests for `risk_engine.py` scoring logic to demonstrate Test-Driven Development (TDD).
-2. **🐳 Docker Containerization (`Dockerfile`)**: Create a container manifest for zero-setup deployment.
-3. **📄 PDF Audit Reports (`ReportLab`)**: Generate downloadable PDF certificates for completed audits.
-4. **📡 Automated Port Scanner (`socket` / `nmap`)**: Add automated local IP subnet scanning.
-5. **🔒 User Authentication (`Flask-Login`)**: Add multi-user authentication with private scan histories.
-
----
-
 ## 📝 License
 
 This project is open-source and available under the **MIT License**.
+
