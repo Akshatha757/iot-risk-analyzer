@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+iot_risk.db
+.pytest_cache/
+.DS_Store
+*.zip
+*.log

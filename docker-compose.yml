@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  iot-shield:
+    build: .
+    container_name: iot_shield_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./iot_risk.db:/app/iot_risk.db
+    restart: always
